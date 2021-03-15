@@ -1,0 +1,88 @@
+#app {
+	width: 80%;
+	margin: 10px auto;
+}
+
+.title-and-buttons{
+	display: flex;
+	justify-content: space-between;
+}
+
+#year-month {
+	font-size: 26px;
+}
+
+.date-input {
+	display: flex;
+	justify-content: flex-end;
+	margin: 10px;
+}
+
+.title {
+	display: flex;
+	align-items: center;
+	flex: 1;
+	font-size: 40px;
+}
+
+.month-table__title, .month-table__days{
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-gap: 1px;
+	
+}
+
+.input-date {
+	padding: 10px 30px;
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+.tile-title {
+	padding: 10px;
+	background-color: #50f;
+	color: #fff
+}
+
+
+.day-tile {
+	height: 70px;
+	background-color: #ddd;
+	padding: 5px;
+}
+
+.user-date {
+	background-color: #060;
+	color: #fff;
+}
+
+.selected-date {
+	background-color: blue;
+	color: #fff;
+}
+
+.actual-date {
+	background-color: red;
+	color: #fff;
+}
+
+.has-note {
+	background-color: yellow !important;
+	color: #000;
+}
+
+#add-note-form {
+	padding: 10px;
+	display: flex;
+}
+
+#note-body {
+	flex: 1;
+	margin-right: 10px;
+	padding: 10px 20px;
+	font-size: 16px;
+}
+
+.note {
+	padding: 10px 0;
+}

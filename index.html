@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div id="app">
+		<div class="date-input">
+			<div id="title" class="title">Calendar</div>
+			<input type="date" class="input-date" id="input-date">
+			<button id="select-date">Select Date</button>
+		</div>
+		<div class="title-and-buttons">
+			<div id="year-month"></div>
+			<div class="buttons">
+				<button id="prev-year-btn">Previous year</button>
+				<button id="prev-month-btn">Previous month</button>
+				<button id="next-month-btn">Next month</button>
+				<button id="next-year-btn">Next year</button>
+			</div>
+		</div>
+		<div class="month-table">
+			<div class="month-table__title">
+				<div class="tile-title">Sun</div>
+				<div class="tile-title">Mon</div>
+				<div class="tile-title">Tue</div>
+				<div class="tile-title">Wed</div>
+				<div class="tile-title">Thu</div>
+				<div class="tile-title">Fri</div>
+				<div class="tile-title">Sat</div>
+			</div>
+			<div class="month-table__days" id="table-days"></div>
+
+		</div>
+		<div id="add-note-form">
+			<input type="text" id="note-body">
+			<input type="button" value="Add note" id="add-note-btn">
+		</div>
+
+		<div id="notes-list">
+		</div>
+
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
