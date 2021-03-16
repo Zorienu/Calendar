@@ -57,6 +57,7 @@ const createMonth = (year, month) => {
     const date = new Date(year, month, i);
     if (date.getMonth() === monthArray[monthArray.length - 1].getMonth())
       monthArray.push(date);
+    else break;
   }
   renderMonth();
 };
@@ -69,7 +70,7 @@ const listNotes = () => {
 
   notes.forEach((note) => {
     const year = note.date.getFullYear();
-    const month = note.date.getMonth();
+    const month = note.date.getMonth() + 1;
     const day = note.date.getDate();
 
     const noteElement = stringToHTML(
